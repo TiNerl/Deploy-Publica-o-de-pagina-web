@@ -1,59 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RE:Vendas</title>
+    <meta name="description" content="Encontre ofertas, tecnologia, casa, moda e muito mais na RE:Vendas. Bons negócios para comprar e vender.">
+    <meta name="theme-color" content="#ffe600">
+    <title>RE:Vendas — Encontre seu próximo favorito</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="#">RE:Vendas</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <div class="announcement">
+        <div class="container announcement-inner">
+            <span>🚚 Frete grátis em milhares de produtos</span>
+            <a href="#ofertas">Aproveite as ofertas do dia <span aria-hidden="true">→</span></a>
+        </div>
+    </div>
+
+    <header class="site-header" id="inicio">
+        <div class="container header-main">
+            <a class="brand" href="#inicio" aria-label="RE:Vendas, página inicial">
+                <span class="brand-mark" aria-hidden="true">R</span>
+                <span>RE:<strong>Vendas</strong></span>
+            </a>
+
+            <div class="location">
+                <span class="location-icon" aria-hidden="true">⌖</span>
+                <span><small>Enviar para</small><strong>Todo o Brasil</strong></span>
+            </div>
+
+            <form class="search" role="search" id="search-form">
+                <label class="visually-hidden" for="search-input">Buscar produtos</label>
+                <input id="search-input" type="search" placeholder="Buscar produtos, marcas e muito mais" autocomplete="off">
+                <button type="submit" aria-label="Buscar">⌕</button>
+            </form>
+
+            <nav class="account-nav" aria-label="Navegação da conta">
+                <a href="#beneficios">Ofertas</a>
+                <a href="#rodape">Ajuda</a>
+                <button class="cart-button" type="button" aria-label="Carrinho com 0 itens">
+                    <span aria-hidden="true">▱</span>
+                    <span class="cart-label">Carrinho</span>
+                    <span class="cart-count" aria-live="polite">0</span>
+                </button>
             </nav>
+        </div>
+        <div class="container nav-row">
+            <nav class="category-nav" aria-label="Categorias">
+                <a href="#categorias">Categorias <span aria-hidden="true">⌄</span></a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#produtos">Mais vendidos</a>
+                <a href="#beneficios">Lojas oficiais</a>
+                <a href="#rodape">Vender</a>
+            </nav>
+            <span class="delivery-note">Compra protegida em todos os pedidos</span>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Welcome to RE:Vendas</h2>
-            <p>Your one-stop online marketplace for unique and high-quality products.</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <h3>Featured Products</h3>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="images/product1.jpg" alt="Product 1">
-                    <h4>Product Name 1</h4>
-                    <p>$99.99</p>
-                    <a href="#" class="btn">Buy Now</a>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">SEU PRÓXIMO ACHADO ESTÁ AQUI</span>
+                    <h1 id="hero-title">Grandes escolhas.<br><span>Negócios incríveis.</span></h1>
+                    <p>Milhares de produtos, vendedores de confiança e ofertas que fazem seu dia melhor.</p>
+                    <a class="button button-dark" href="#ofertas">Descobrir ofertas <span aria-hidden="true">→</span></a>
+                    <div class="hero-proof"><span aria-hidden="true">✓</span> Compra protegida do pagamento à entrega</div>
                 </div>
-                <div class="product-item">
-                    <img src="images/product2.jpg" alt="Product 2">
-                    <h4>Product Name 2</h4>
-                    <p>$149.99</p>
-                    <a href="#" class="btn">Buy Now</a>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-sun"></div>
+                    <div class="hero-card">
+                        <span class="hero-card-label">OFERTA DO DIA</span>
+                        <div class="hero-product-emoji">🎧</div>
+                        <span class="hero-product-name">Som que acompanha você</span>
+                        <strong>Até 40% OFF</strong>
+                    </div>
+                    <span class="floating-tag tag-one">⚡ Ofertas novas</span>
+                    <span class="floating-tag tag-two">♡ Favoritos</span>
                 </div>
-                <!-- Add more product items as needed -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 RE:Vendas. All rights reserved.</p>
+        <section class="trust-strip" id="beneficios" aria-label="Benefícios">
+            <div class="container trust-grid">
+                <div class="trust-item"><span class="trust-icon">🔒</span><span><strong>Compra protegida</strong><small>Seu dinheiro seguro</small></span></div>
+                <div class="trust-item"><span class="trust-icon">🚚</span><span><strong>Chega rapidinho</strong><small>Acompanhe seu pedido</small></span></div>
+                <div class="trust-item"><span class="trust-icon">↩</span><span><strong>Devolução grátis</strong><small>Você compra tranquilo</small></span></div>
+                <div class="trust-item"><span class="trust-icon">✦</span><span><strong>Milhares de opções</strong><small>Do seu jeito</small></span></div>
+            </div>
+        </section>
+
+        <section class="category-section section-space" id="categorias">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow">EXPLORE A VITRINE</span><h2>O que você está procurando?</h2></div>
+                    <a class="text-link" href="#produtos">Ver tudo <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="category-grid" role="group" aria-label="Filtrar produtos por categoria">
+                    <button class="category-tile active" type="button" data-category="todos" aria-pressed="true"><span class="category-icon all-icon">✦</span><span>Tudo</span></button>
+                    <button class="category-tile" type="button" data-category="tecnologia" aria-pressed="false"><span class="category-icon">🎧</span><span>Tecnologia</span></button>
+                    <button class="category-tile" type="button" data-category="casa" aria-pressed="false"><span class="category-icon">🪴</span><span>Casa & decoração</span></button>
+                    <button class="category-tile" type="button" data-category="moda" aria-pressed="false"><span class="category-icon">👜</span><span>Moda</span></button>
+                    <button class="category-tile" type="button" data-category="esportes" aria-pressed="false"><span class="category-icon">🏃</span><span>Esportes</span></button>
+                    <button class="category-tile" type="button" data-category="beleza" aria-pressed="false"><span class="category-icon">✨</span><span>Beleza</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="deal-section" id="ofertas">
+            <div class="container">
+                <div class="deal-banner">
+                    <div>
+                        <span class="eyebrow">BONS NEGÓCIOS, TODO DIA</span>
+                        <h2>Ofertas que dão<br>vontade de levar.</h2>
+                        <p>Encontre seu próximo favorito com preço especial.</p>
+                        <a class="button button-light" href="#produtos">Eu quero <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="deal-decoration" aria-hidden="true"><span>★</span><span>✦</span><span>↗</span></div>
+                    <div class="deal-sticker" aria-hidden="true">ATÉ<br><strong>50%</strong><br>OFF</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section section-space" id="produtos">
+            <div class="container">
+                <div class="section-heading products-heading">
+                    <div><span class="eyebrow">ESCOLHAS DA COMUNIDADE</span><h2 id="products-title">Achados para chamar de seus</h2></div>
+                    <span class="results-count" id="results-count">8 produtos</span>
+                </div>
+                <p class="empty-state" id="empty-state" hidden>Nenhum produto encontrado. Tente outra busca ou categoria.</p>
+                <div class="product-grid">
+                    <article class="product-card" data-category="tecnologia" data-search="fone bluetooth sem fio tecnologia música">
+                        <div class="product-image image-headphones"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=720&q=85" alt="Fone de ouvido sem fio sobre fundo amarelo" loading="lazy"><span class="product-badge">MAIS VENDIDO</span><button class="favorite-button" type="button" aria-label="Adicionar Fone Bluetooth Wave aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">LOJA OFICIAL · ÁUDIO+</span><h3>Fone Bluetooth Wave</h3><div class="rating"><span>★★★★★</span> <small>4.9 (238)</small></div><p class="old-price">R$ 349,90</p><p class="price">R$ 219<small>,90</small></p><p class="installments">ou 6x de R$ 36,65 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Fone Bluetooth Wave">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="casa" data-search="luminária mesa casa decoração">
+                        <div class="product-image image-lamp"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=720&q=85" alt="Luminária de mesa moderna em ambiente aconchegante" loading="lazy"><span class="product-badge badge-green">OFERTA DO DIA</span><button class="favorite-button" type="button" aria-label="Adicionar Luminária Nórdica aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">CASA BONITA</span><h3>Luminária Nórdica</h3><div class="rating"><span>★★★★★</span> <small>4.8 (96)</small></div><p class="old-price">R$ 259,00</p><p class="price">R$ 179<small>,00</small></p><p class="installments">ou 5x de R$ 35,80 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Luminária Nórdica">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="moda" data-search="mochila urbana mochila moda viagem">
+                        <div class="product-image image-backpack"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=720&q=85" alt="Mochila urbana em tecido resistente" loading="lazy"><span class="product-badge">ENVIO RÁPIDO</span><button class="favorite-button" type="button" aria-label="Adicionar Mochila Urbana aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">TRILHA & CIA</span><h3>Mochila Urbana 20L</h3><div class="rating"><span>★★★★★</span> <small>4.7 (412)</small></div><p class="old-price">R$ 289,90</p><p class="price">R$ 189<small>,90</small></p><p class="installments">ou 6x de R$ 31,65 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Mochila Urbana 20L">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="tecnologia" data-search="relógio inteligente smartwatch tecnologia esporte">
+                        <div class="product-image image-watch"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=720&q=85" alt="Relógio inteligente com pulseira escura" loading="lazy"><span class="product-badge badge-green">-30%</span><button class="favorite-button" type="button" aria-label="Adicionar Smartwatch Pulse aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">LOJA OFICIAL · TECHNOW</span><h3>Smartwatch Pulse</h3><div class="rating"><span>★★★★★</span> <small>4.9 (1.2 mil)</small></div><p class="old-price">R$ 499,00</p><p class="price">R$ 349<small>,00</small></p><p class="installments">ou 10x de R$ 34,90 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Smartwatch Pulse">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="casa" data-search="vaso cerâmica decoração casa artesanal">
+                        <div class="product-image image-vase"><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=720&q=85" alt="Vaso de cerâmica decorativo artesanal" loading="lazy"><span class="product-badge badge-purple">FEITO À MÃO</span><button class="favorite-button" type="button" aria-label="Adicionar Vaso Terracota aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">FEITO POR AQUI</span><h3>Vaso Terracota P</h3><div class="rating"><span>★★★★★</span> <small>4.8 (74)</small></div><p class="old-price">R$ 129,90</p><p class="price">R$ 89<small>,90</small></p><p class="installments">ou 3x de R$ 29,97 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Vaso Terracota P">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="esportes" data-search="garrafa térmica esportes academia corrida">
+                        <div class="product-image image-bottle"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=720&q=85" alt="Garrafa reutilizável para hidratação" loading="lazy"><span class="product-badge badge-green">ESCOLHA SUSTENTÁVEL</span><button class="favorite-button" type="button" aria-label="Adicionar Garrafa Térmica aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">MOVIMENTO LIVRE</span><h3>Garrafa Térmica 750ml</h3><div class="rating"><span>★★★★★</span> <small>4.9 (321)</small></div><p class="old-price">R$ 159,90</p><p class="price">R$ 109<small>,90</small></p><p class="installments">ou 4x de R$ 27,48 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Garrafa Térmica 750ml">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="beleza" data-search="skincare sérum vitamina c beleza cuidado">
+                        <div class="product-image image-skincare"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=720&q=85" alt="Produtos de skincare para rotina de cuidados" loading="lazy"><span class="product-badge badge-purple">QUERIDINHO</span><button class="favorite-button" type="button" aria-label="Adicionar Sérum Vitamina C aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">PELE & CUIDADO</span><h3>Sérum Vitamina C</h3><div class="rating"><span>★★★★★</span> <small>4.8 (189)</small></div><p class="old-price">R$ 119,90</p><p class="price">R$ 79<small>,90</small></p><p class="installments">ou 2x de R$ 39,95 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Sérum Vitamina C">Adicionar ao carrinho</button></div>
+                    </article>
+                    <article class="product-card" data-category="moda" data-search="óculos sol moda acessórios verão">
+                        <div class="product-image image-sunglasses"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=720&q=85" alt="Óculos de sol com design contemporâneo" loading="lazy"><span class="product-badge">NOVIDADE</span><button class="favorite-button" type="button" aria-label="Adicionar Óculos Solar aos favoritos">♡</button></div>
+                        <div class="product-info"><span class="seller-label">ÓTICA DO CENTRO</span><h3>Óculos Solar Urban</h3><div class="rating"><span>★★★★★</span> <small>4.7 (58)</small></div><p class="old-price">R$ 199,90</p><p class="price">R$ 129<small>,90</small></p><p class="installments">ou 4x de R$ 32,48 sem juros</p><p class="shipping">✓ Frete grátis</p><button class="add-to-cart" type="button" data-product="Óculos Solar Urban">Adicionar ao carrinho</button></div>
+                    </article>
+                </div>
+                <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="seller-cta">
+            <div class="container seller-content">
+                <div><span class="eyebrow">SUA IDEIA MERECE IR MAIS LONGE</span><h2>Tem algo para vender?</h2><p>Milhares de pessoas estão procurando o que você oferece.</p></div>
+                <button class="button button-dark" id="seller-cta-button" type="button">Comece a vender <span aria-hidden="true">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div class="container footer-main">
+            <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">R</span><span>RE:<strong>Vendas</strong></span></a><p>Um mundo de possibilidades, pertinho de você.</p></div>
+            <div class="footer-column"><h2>Conheça</h2><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas do dia</a><a href="#produtos">Mais vendidos</a></div>
+            <div class="footer-column"><h2>Ajuda</h2><a href="#beneficios">Compra protegida</a><a href="#beneficios">Envios e devoluções</a><a href="#inicio">Voltar ao início</a></div>
+            <div class="footer-column footer-social"><h2>Feito para bons encontros</h2><p>Compradores e vendedores juntos, construindo novas possibilidades.</p><span>© 2026 RE:Vendas · Projeto demonstrativo</span></div>
         </div>
+        <div class="container footer-bottom"><span>Preços e produtos ilustrativos para fins de demonstração.</span><a href="#inicio">Voltar ao topo ↑</a></div>
     </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js" defer></script>
 </body>
 </html>
